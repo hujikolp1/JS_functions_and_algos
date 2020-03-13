@@ -23,7 +23,7 @@ class Stack {
     let str = "";
     for (let i = 0; i < this.stack.length; i++) {
       if (i == this.stack.length - 1) {
-        str += this.stack[i] + " ";
+        str += this.stack[i];
       }
       else {
         str += this.stack[i] + ", ";
