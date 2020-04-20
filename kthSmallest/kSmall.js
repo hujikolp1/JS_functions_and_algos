@@ -90,7 +90,7 @@ console.log("sorted: ", "[ 3, 4, 5, 6, 8, 16, 22, 27, 34, 44, 45, 85, 90 ]");
 thing__LENGTH = unsortedThing.length - 1;
 console.log("unsortedThing:                      ", unsortedThing);
 console.log("================================================================");
-let position = 5;
+let position = 7;
 console.log("Position to pivot is: ", position);
 console.log(`kth smallest integer in array is: `,
   kSmall(position, unsortedThing, 0, thing__LENGTH));

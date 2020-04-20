@@ -172,6 +172,10 @@ let testHash = {
   kjv: "try",
   iyf: "when",
   ff: "alsotwelve",
+  jhgd: "yolo",
+  eat: "duck",
+  lrewa: "hellomars",
+  cne: "okaythen",
 };
 
 //==============================================================================
@@ -179,8 +183,10 @@ let testHash = {
 console.log('==============');
 
 let testHashArr = hashObject(testHash);
-console.log("Object: ");
+console.log("UnHashed Object: ");
 logArrEvery(testHash);
+console.log("Hashed Object: ");
+logArrEvery(testHashArr); 
 searchHash();
 
 console.log('==============');
