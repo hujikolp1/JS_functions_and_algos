@@ -24,18 +24,24 @@ function partition(inputArray) {
 
   swap(inputArray, pivotPosition, i);
 
-  // console.log("Pivoted Array: ", inputArray)
+  console.log("Pivoted Array: ", inputArray); 
+  console.log("Pivot Position: ", i);
 
-  return inputArray;
+  return i;
 
 }
 
 //-----------------------------TEST---------------------------------------------
-console.log("--------TEST 1--------");
-let testArr = [1,7,9,4,2,3,6,8,5];
-console.log("testArr: ", testArr);
-console.log("Partition: ", partition(testArr));
-console.log("--------TEST 2--------");
-let testArr2 = [5,70,8,23,6,19,3,54,7,88,9,17];
-console.log("testArr2: ", testArr2);
-console.log("Partition: ", partition(testArr2));
+// console.log("--------TEST 1--------");
+// let testArr = [1,7,9,4,2,3,6,8,5];
+// console.log("testArr: ", testArr);
+// console.log("Partition: ", partition(testArr));
+// console.log("--------TEST 2--------");
+// let testArr2 = [5,70,8,23,6,19,3,54,7,88,9,17];
+// console.log("testArr2: ", testArr2);
+// console.log("Partition: ", partition(testArr2));
+
+//==============================================================================
+//                            EXPORT
+
+module.exports = partition;

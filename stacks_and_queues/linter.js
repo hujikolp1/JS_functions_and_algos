@@ -18,7 +18,9 @@ then the opening brace/parenths has no closing and this is an error.
 */
 //==============================================================================
 
-
+function linter(inputStr) {
+  
+}
 
 
 
