@@ -6,8 +6,8 @@ const jsPivot = require('../basicArrayPartition/jsArrPivot.js');
 let testArr = [-7,9,2,-1,8,5,6,7,3];
 
 console.log("=====Basic Partition=====");
-console.log("Un-Pivoted Array: ", testArr);
-console.log(basicPartition(testArr));
+console.log("Un-Pivoted Basic Array: ", testArr);
+console.log("Pivoted Basic Partition: ", basicPartition(testArr));
 
 //==============================================================================
 //                      QUICKSORT
@@ -19,6 +19,8 @@ const quickSort = (inputArray, left, right) => {
   if(inputArray.length > 1) {
 
     index = jsPivot(inputArray, left, right);
+    console.log("LEFT: ", left);
+    console.log("RIGHT: ", right);
 
     if(left < index - 1) {
       quickSort(inputArray, left, index - 1);

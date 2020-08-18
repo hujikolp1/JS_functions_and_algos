@@ -6,7 +6,7 @@ function swap(inputArray, i, j) {
 
 let jsPivot = (arr, left, right) => {
   var pivot = arr[Math.floor( (right + left) / 2)];
-  console.log("Middle Pivot is: ", pivot); 
+  console.log("Middle Pivot of Right & Left is: ", pivot);
   var i = left;
   var j = right;
 
@@ -22,6 +22,7 @@ let jsPivot = (arr, left, right) => {
       swap(arr, i, j);
       i++;
       j--;
+      console.log("...swapping array: ", arr);
     }
   }
 
