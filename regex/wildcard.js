@@ -4,8 +4,7 @@ let result = wildRegex.test(owStr);
 console.log("-> ", result)
 
 let cowGo = "Mooooooooo mooooo"; 
-let cowRegez = /Mo*/; 
-
-let result2 = cowGo.match(cowRegez);
+let cowRegex = /Mo*/; 
+let result2 = cowGo.match(cowRegex);
 console.log("-> ", result2)
 
