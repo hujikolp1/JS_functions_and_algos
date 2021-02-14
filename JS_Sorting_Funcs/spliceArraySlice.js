@@ -20,5 +20,8 @@ let valuesToAdd = [106,107];
 numArr.splice(startIndex, amountToDelete, ...valuesToAdd);
 console.log("after -> ", numArr)
 
-
-
+const slicedArr = [22,33,44,55,66,77,88]
+console.log("slicedArr before-> ", slicedArr)
+let newSlicedArr = slicedArr.slice(2,6)
+console.log("newSlicedArr after-> ", newSlicedArr)
+console.log("last index to slice is exlcusive not inclusive")
