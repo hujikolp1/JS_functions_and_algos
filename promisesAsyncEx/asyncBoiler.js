@@ -34,4 +34,4 @@ async function f4() {
 f4();
 
 var response = await promisedFunction().catch((err) => { console.error(err); });
-response will be undefined if the promise is rejected
+console.log(response)
