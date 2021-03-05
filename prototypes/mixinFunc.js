@@ -4,7 +4,7 @@ let cat = {
   };
   
   let dog = {
-    name: "pongo",
+    name: "Pongo",
     personality: "loyal"
   };
     
