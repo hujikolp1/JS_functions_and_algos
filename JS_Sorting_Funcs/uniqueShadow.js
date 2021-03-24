@@ -2,6 +2,7 @@ function uniteUnique(arr) {
     let argsArr = Array.from(arguments)
     let shadow = []
     let res=[]; 
+    // N^2 time with nested loops
     for(let i in argsArr){
       for(let k in argsArr[i]){
         if( shadow[argsArr[i][k]] === undefined){
