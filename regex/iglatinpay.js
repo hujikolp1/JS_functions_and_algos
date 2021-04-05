@@ -4,7 +4,7 @@ function translatePigLatin(str) {
   
     // if first char is NOT aeiou, ie IS consonant 
     if( !re2.test(str[0]) ) {
-      let tempChar;
+      let tempChar;  
       let charIndex; 
       for(let i=0;i<str.length;i++) {
         if (i===str.length-1){   
