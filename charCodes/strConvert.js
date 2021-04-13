@@ -1,15 +1,19 @@
 function strConvert(str) {
-    var binString = str.split(' ');
-    var charString = [];
+    var inputStr = str
+    console.log('inputStr -> ', inputStr)
+    var binStr = [];
   
-    for (let i in binString) {
-        let intFromBin = String.prototype.charCodeAt(binString[i], 2)
-        console.log()
-        charString.push( intFromBin  );
+    let binFromChar
+    for (let i in inputStr) {
+        for(let j in inputStr[i]){
+            binFromChar = inputStr[i][j].charCodeAt(0).toString(2);
+            binStr.push( binFromChar + ' ');
+        }        
     }
-  
-    console.log('charString -> ', charString.join(''))
-    return charString.join('');
+    console.log('binStr -> ', binStr.join(''))
+    return binStr.join('');
   }
   
-  strConvert( 'hollow' );
+  strConvert( 'the answer is 42' );
+
+
